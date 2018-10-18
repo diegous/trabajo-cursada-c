@@ -1,0 +1,50 @@
+GRUPO 40
+========
+
+Integrantes:
+	- MUÑOA Diego
+
+
+Archivos incluidos:
+	- alumno.h
+	- alumno.c
+	  + header e implementación del TAD alumno
+
+	- lista.h
+	- lista.c
+	  + header e implementación del TAD lista
+
+	- extras.h
+	- extras.c
+	  + funciones usadas en programas 1 y 2
+
+	- programa1.c
+	  + implementación de programa que resuelve el punto 1
+
+	- programa2.c
+	  + implementación de programa que resuelve el punto 2
+
+
+Aclaraciones:
+
+- Luego de conocer los problemas que puede generar el SCANF se ha optado por crear una
+  función leer() que lee caracteres de teclado y limpia el BUFFER, y una stringANumero()
+  que recibe un String y devuelve un número. Estas están incluidas en extras.h.
+
+- Las funciones que se pasan a través de parámetros (ej. los comparadores) no reciben
+  punteros a void. Esto genera un Warning al intentar compilar un programa, sabemos como
+  solucionarlo pero hemos decidido usarlo de esta manero porque permite un mínimo chequeo
+  en tiempo de compilación. Esto además fue aconsejado por un ayudante 
+  (https://catedras.linti.unlp.edu.ar/mod/forum/discuss.php?d=4980#p12884).
+
+- Se ha incluido (y se hace uso de) una función ToStringF que es similar al ToString simple
+  pero imprime siempre con un formato de 64 caracteres que permite ver una lista mas clara 
+  en la pantalla.
+
+- El programa 1 recibe el nombre del archivo a crear como primer parámetro a la función main.
+  Se compila: gcc -o programa1.exe programa1.c alumno.c extras.c -Wall
+
+- El programa 2 recibe el nombre del archivo a abrir como primer parámetro a la función main
+  y el método de ordenación como segundo parámetro: "-a" (ordena por apellido), "-n" (ordena
+  por nombre) y "-f" (ordena por fecha).
+  Se compila: gcc -o programa2.exe programa2.c alumno.c lista.c extras.c -Wall
