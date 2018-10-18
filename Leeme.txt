@@ -2,27 +2,27 @@ GRUPO 40
 ========
 
 Integrantes:
-	- MUÑOA Diego
+  - MUÑOA Diego
 
 
 Archivos incluidos:
-	- alumno.h
-	- alumno.c
-	  + header e implementación del TAD alumno
+  - alumno.h
+  - alumno.c
+    + header e implementación del TAD alumno
 
-	- lista.h
-	- lista.c
-	  + header e implementación del TAD lista
+  - lista.h
+  - lista.c
+    + header e implementación del TAD lista
 
-	- extras.h
-	- extras.c
-	  + funciones usadas en programas 1 y 2
+  - extras.h
+  - extras.c
+    + funciones usadas en programas 1 y 2
 
-	- programa1.c
-	  + implementación de programa que resuelve el punto 1
+  - programa1.c
+    + implementación de programa que resuelve el punto 1
 
-	- programa2.c
-	  + implementación de programa que resuelve el punto 2
+  - programa2.c
+    + implementación de programa que resuelve el punto 2
 
 
 Aclaraciones:
@@ -34,11 +34,11 @@ Aclaraciones:
 - Las funciones que se pasan a través de parámetros (ej. los comparadores) no reciben
   punteros a void. Esto genera un Warning al intentar compilar un programa, sabemos como
   solucionarlo pero hemos decidido usarlo de esta manero porque permite un mínimo chequeo
-  en tiempo de compilación. Esto además fue aconsejado por un ayudante 
+  en tiempo de compilación. Esto además fue aconsejado por un ayudante
   (https://catedras.linti.unlp.edu.ar/mod/forum/discuss.php?d=4980#p12884).
 
 - Se ha incluido (y se hace uso de) una función ToStringF que es similar al ToString simple
-  pero imprime siempre con un formato de 64 caracteres que permite ver una lista mas clara 
+  pero imprime siempre con un formato de 64 caracteres que permite ver una lista mas clara
   en la pantalla.
 
 - El programa 1 recibe el nombre del archivo a crear como primer parámetro a la función main.

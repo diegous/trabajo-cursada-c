@@ -4,8 +4,8 @@
 
 /* Estructura de la lista */
 struct T_nodo{
-	void * elem;
-	struct T_nodo *sig;
+  void * elem;
+  struct T_nodo *sig;
 };
 
 typedef struct T_nodo * Lista;
@@ -18,18 +18,18 @@ typedef struct T_nodo * Iterador;
 /*
  * CARACTERÍSTICAS DE LA LISTA
  * ===========================
- * 
- * - Usa almacenamiento externo, por lo que es necesario 
+ *
+ * - Usa almacenamiento externo, por lo que es necesario
  *   alocar memoria para el dato contenido por cada nodo
- * 
+ *
  * - Para recorrer se debe usar un iterador de tipo Iterador,
  *   para el cual estan definidas las funciones INICIAR,
  *   SIGUIENTE, FIN y ELEMENTO
- * 
+ *
  * - Para crear una lista ordenada se dispone de una función
  *   "lista_ordenar", pero esta requiere de otra función que
  *   compare 2 elementos del tipo guardado en la lista
- * 
+ *
 */
 
 /* OPERACIONES DE RECORRIDO DE LISTA CON ITERADOR */

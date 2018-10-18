@@ -5,23 +5,23 @@
 /* ESTRUCTURA DE T_ALUMNO */
 
 typedef struct{
-	char nombre[31];
-	char apellido[31];
-	struct{
-		int dd;
-		int mm;
-		int yyyy;
-	}fecha;
-	char legajo[7];
-	char dni[9];
+  char nombre[31];
+  char apellido[31];
+  struct{
+    int dd;
+    int mm;
+    int yyyy;
+  }fecha;
+  char legajo[7];
+  char dni[9];
 }T_alumno;
 
 
 /* STRINGS PARA LOS TO-STRING */
 
 typedef struct{
-	char alumno_s[100];
-	char alumno_sf[65];
+  char alumno_s[100];
+  char alumno_sf[65];
 }alumno_string;
 
 
